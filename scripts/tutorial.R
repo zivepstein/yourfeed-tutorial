@@ -4,7 +4,6 @@ library(tidyverse)
 source("utils.R")
 
 src <- "../data/e3pG6d_engagement.csv"
-dat <- fread(src)
 dat <- get_data(src = src, n_entities = 50)
 useritem <- make_dwell_data(dat, output = output, max_dwell_ms = 30000, min_dwell_ms = 250, exclude_start_end = c(3, 3))
 # clean userform data
