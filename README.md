@@ -25,3 +25,10 @@ top_dwells <- useritem %>% group_by(entity_id) %>% summarize(
 ) %>% arrange(desc(ldwell)); head(top_dwells$url)
 ```
 
+and that's it!
+
+##Useful links
++ [Yourfeed white paper](https://arxiv.org/pdf/2207.07478.pdf)
++ [Yourfeed empirical paper](https://arxiv.org/pdf/2207.07562.pdf)
++ [Yourfeed About page](https://yourfeed.social/about) 
+
